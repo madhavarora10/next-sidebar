@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
-import Router from "next/router";
+
 
 export const ActiveLink=({href,children})=>{
     const router = useRouter();
     (function prefetchPages(){
         if(typeof window!=='undefined'){
-            router.prefetch(Router.pathname)
+            router.prefetch(router.pathname)
         }
     })
     const handleClick=(e)=>{
