@@ -4,7 +4,7 @@ import { ProSidebarProvider } from "react-pro-sidebar";
 export const ContentLayout = ({ children }) => {
     return (
       
-      <div className="flex">
+      <div style={{height:'100vh', display:'flex',padding:"0",margin:'0'}}>
         <ProSidebarProvider>
         <Navbar />
           { children }
